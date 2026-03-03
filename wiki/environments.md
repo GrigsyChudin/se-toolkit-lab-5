@@ -20,9 +20,9 @@
 
 ## What is an environment
 
-An environment (deployment environment) is ...
+An environment (deployment environment) is a specific configuration of hardware, software, and [environment variables](#environment-variable) in which an application runs.
 
-<!-- TODO -->
+Different environments serve different purposes in the software development lifecycle: writing code, testing, and serving end users.
 
 ## Environment variable
 
@@ -117,8 +117,24 @@ Each development environment may need a specific set of [environment variables](
 
 ### Development environment
 
+The development environment is where developers write, run, and test code locally.
+
+It typically uses development-friendly settings: detailed error messages, local databases, and debug tools.
+
 ### Integration environment
+
+The integration environment is where code from multiple developers is merged and tested together.
+
+It verifies that separate components work correctly when combined.
 
 ### Staging environment
 
+The staging environment closely mirrors production.
+
+It is used to perform final verification before deploying changes to the [production environment](#production-environment).
+
 ### Production environment
+
+The production environment is the live environment where end users access the application.
+
+It uses production settings: minimal error output, real data, and performance-optimised configuration.
